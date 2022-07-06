@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+article {
+    
+    background-image: url('/src/assets/bg-stars.svg'), linear-gradient(180deg, rgba(30,31,41,1) 0%, rgba(42,30,44,255) 100%);
+}
+
+
+/*main > div {
+    @apply min-w-[200px] h-[300px] mr-10;
+}*/
+
+footer > img {
+    @apply h-5 mr-5;
+}
+
+button{
+    @apply bg-redDark text-xl font-custom text-white border-blue mr-10 w-28 h-10 border-solid border-2 shadow-2xl rounded-md
+}
+
+.topcard {
+    transform-origin: 50% 100%;
+}
+
+.bottomcard {
+    transform-origin: 50% 0%;
+}
+
+@keyframes flipTop {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(-90deg);
+    }
+}
+
+@keyframes flipBottom {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+.flipTop {
+    animation-name: flipTop;
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+}
+
+.flipBottom {
+    animation-name: flipBottom;
+    animation-duration: 0.25s;
+    animation-delay: 0.25s;
+    animation-fill-mode: both;
+}
+
+h3 {
+    list-style-type: decimal-leading-zero;
+}
+
+
+
