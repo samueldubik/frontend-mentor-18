@@ -19,8 +19,8 @@
 
     <footer class=" flex bg-hills bg-cover h-[15vh] justify-center items-center pl-10 pt-10">
       <img class=" " src="/src/assets/icon-facebook.svg" alt="">
-      <img class=" " src="src/assets/icon-pinterest.svg" alt="">
-      <img class=" " src="src/assets/icon-instagram.svg" alt="">
+      <img class=" " src="/src/assets/icon-pinterest.svg" alt="">
+      <img class=" " src="/src/assets/icon-instagram.svg" alt="">
     </footer>
   </article>
 </template>
