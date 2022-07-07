@@ -4,18 +4,21 @@
       <h1 class=" text-white text-center mt-32 font-custom text-4xl uppercase ">We're Launching soon</h1>
     </header>
 
-    <main class="flex justify-center mb-auto mt-32 ml-10">
+    <main class="grid grid-cols-4 mb-auto mt-32 lg:px-[20vw] md:px-[10vw] xs:px-[10vw]">
       
-      <FlipCard class=" mr-10" v-if="daysRendered" :number="this.days"></FlipCard>
-      <FlipCard class=" mr-10" v-if="hoursRendered" :number="this.hours"></FlipCard>
-      <FlipCard class=" mr-10" v-if="minutesRendered" :number="this.minutes"></FlipCard>
-      <FlipCard class=" mr-10" v-if="secondsRendered" :number="this.seconds"></FlipCard>
+      <FlipCard class=" mx-auto" v-if="daysRendered" :number="this.days"></FlipCard>
+      <FlipCard class=" mx-auto " v-if="hoursRendered" :number="this.hours"></FlipCard>
+      <FlipCard class=" mx-auto " v-if="minutesRendered" :number="this.minutes"></FlipCard>
+      <FlipCard class=" mx-auto " v-if="secondsRendered" :number="this.seconds"></FlipCard>
       
+      <h4>DAYS</h4>
+      <h4>HOURS</h4>
+      <h4>MINUTES</h4>
+      <h4>SECONDS</h4>
 
 
     </main>
 
-    <button @click="timer();">START</button>
 
     <footer class=" flex bg-hills bg-cover h-[15vh] justify-center items-center pl-10 pt-10">
       <img class=" " src="/src/assets/icon-facebook.svg" alt="">
@@ -45,6 +48,10 @@ import FlipCard from './components/FlipCard.vue'
         minutesRendered: true,
         secondsRendered: true,
       }
+    },
+
+    mounted() {
+      this.timer();
     },
 
 

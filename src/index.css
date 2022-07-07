@@ -64,7 +64,19 @@ button{
 
 h3 {
     list-style-type: decimal-leading-zero;
+
+    @apply text-redDark font-custom absolute text-5xl sm:text-6xl md:text-8xl
+}
+
+.text-top {
+
+}
+
+.text-bottom {
+
 }
 
 
-
+h4 {
+    @apply text-blue font-custom text-center mt-4 text-sm sm:text-lg
+}
